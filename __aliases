@@ -1,0 +1,4 @@
+WIP file for aliases :
+alias gs="git status -v"
+alias gc="git commit"
+alias ga="git add --all"
