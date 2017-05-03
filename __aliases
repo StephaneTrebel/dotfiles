@@ -1,4 +1,11 @@
-WIP file for aliases :
-alias gs="git status -v"
-alias gc="git commit"
+# Shell aliases
+alias src="source ~/.bash*"
+alias godatalait="nvm use datalait && cd /home/strebel-timwi/projets/datalait-front-end/application"
+alias goextranet="nvm use extranet && cd /home/strebel-timwi/projets/extranet-mobile"
 alias ga="git add --all"
+alias gc="git commit"
+alias gd="git diff"
+alias gs="git status"
+alias gp="git push"
+alias gpl="git pull"
+alias vrc="vim ~/.vim/.vimrc"
