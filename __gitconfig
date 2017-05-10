@@ -1,22 +1,21 @@
 # Many thanks to https://blog.scottnonnenberg.com/better-git-configuration/
-
 [user]
-  # No email because it depends on where I work :D
-	name = Stéphane Trebel
+    # No email because it depends on where I work :D
+    name = Stéphane Trebel
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	default = simple
-  followTags = true
+    default = simple
+    followTags = true
 [alias]
-  prune = fetch --prune
-  undo = reset --soft HEAD^
-  stash-all = stash save --include-untracked
-  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    prune = fetch --prune
+    undo = reset --soft HEAD^
+    stash-all = stash save --include-untracked
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [merge]
-  ff = only
-  conflictstyle = diff3
+    ff = only
+    conflictstyle = diff3
 [status]
-  showUntrackedFiles = all
+    showUntrackedFiles = all
 [transfer]
-  fsckobjects = true
+    fsckobjects = true
