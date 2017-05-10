@@ -1,11 +1,18 @@
-# Shell aliases
 alias src="source ~/.bash*"
+alias vrc="vim ~/.vim/.vimrc"
+
 alias godatalait="nvm use datalait && cd /home/strebel-timwi/projets/datalait-front-end/application"
 alias goextranet="nvm use extranet && cd /home/strebel-timwi/projets/extranet-mobile"
+
 alias ga="git add --all"
 alias gc="git commit"
 alias gd="git diff"
 alias gs="git status"
 alias gp="git push"
 alias gpl="git pull"
-alias vrc="vim ~/.vim/.vimrc"
+
+alias dr="docker run --run -it"
+alias dp="docker ps -a"
+alias di="docker images"
+alias drm="docker rm"
+alias drmi="docker rmi"
