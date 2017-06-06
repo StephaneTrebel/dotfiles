@@ -19,3 +19,5 @@
     showUntrackedFiles = all
 [transfer]
     fsckobjects = true
+[fetch]                                                                              
+    prune = true
