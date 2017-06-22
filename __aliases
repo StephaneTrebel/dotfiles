@@ -7,6 +7,7 @@ alias gd="git diff"
 alias gs="git status"
 alias gp="git push"
 alias gpl="git pull"
+alias gl="git glog"
 # Removed local branches that have been merged (master and develop preserved)
 alias gpurge="git branch --merged | egrep -v '(^\*|master|develop)' | xargs git branch -d"
 
