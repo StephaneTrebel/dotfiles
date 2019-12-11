@@ -1,6 +1,10 @@
-alias src="source ~/.bash*"
-alias vrc="vim ~/.vim/.vimrc"
+alias aliases="cat ~/dotfiles/.files/__aliases"
+alias valiases="vim ~/dotfiles/.files/__aliases"
+alias src="source ~/.bashrc"
+alias vrc="vim ~/.vimrc"
 alias vim="fg || vim"
+alias v="vim"
+alias tn="tmux new -s steph"
 
 alias ga="git add --all"
 alias gc="git commit"
