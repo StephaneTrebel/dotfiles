@@ -1,5 +1,5 @@
-alias aliases="cat ~/dotfiles/.files/__aliases"
-alias valiases="vim ~/dotfiles/.files/__aliases"
+alias aliases="cat ~/.bashrc.d/aliases.bashrc"
+alias valiases="vim ~/.bashrc.d/aliases.bashrc"
 alias src="source ~/.bashrc"
 alias vrc="vim ~/.vimrc"
 alias vim="fg || vim"
