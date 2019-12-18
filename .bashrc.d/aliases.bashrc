@@ -22,4 +22,3 @@ alias dp="docker ps -a"
 alias di="docker images"
 alias drm="docker rm"
 alias drmi="docker rmi"
-
