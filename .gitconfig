@@ -22,4 +22,4 @@
 [fetch]
 	prune = true
 [core]
-	autocrlf = true
+	autocrlf = input
