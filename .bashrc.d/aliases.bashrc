@@ -6,7 +6,7 @@ alias vim="fg || vim"
 alias v="vim"
 alias tn="tmux new -s steph"
 
-alias ga="git add --all"
+alias ga="git add --patch"
 alias gc="git commit"
 alias gd="git diff"
 alias gdc="git diff --cached"
