@@ -1,7 +1,4 @@
 # Many thanks to https://blog.scottnonnenberg.com/better-git-configuration/
-[user]
-	name = Stéphane Trebel
-	email = stephane.trebel@capgemini.com
 [pull]
 	rebase = true
 [push]
@@ -12,6 +9,9 @@
 	undo = reset --soft HEAD^
 	stash-all = stash save --include-untracked
 	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	glogtags = log --tags --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	showfiles = diff-tree --no-commit-id --name-only -r
+	find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 [merge]
 	ff = only
 	conflictstyle = diff3
@@ -23,3 +23,7 @@
 	prune = true
 [core]
 	autocrlf = input
+	editor = vim
+[credential]
+	helper = store
+
