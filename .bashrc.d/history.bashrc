@@ -5,6 +5,10 @@ export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 
+# Allow use of Ctrl-S in Bash history-search (Ctrl-R) to forward search
+# (only for interactive shell, hence the condition)
+[[ $- == *i* ]] && stty -ixon
+
 # append history entries..
 shopt -s histappend
 
