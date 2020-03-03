@@ -5,6 +5,7 @@ alias vrc="vim ~/.vimrc"
 alias vim="fg || vim"
 alias v="vim"
 alias tn="tmux new -s steph"
+alias passwordgen="date +%s | sha256sum | base64 | head -c 32 ; echo"
 
 alias ga="git add --patch"
 alias gc="git commit"
