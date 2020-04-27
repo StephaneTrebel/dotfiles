@@ -2,8 +2,6 @@ alias aliases="cat ~/.bashrc.d/aliases.bashrc"
 alias valiases="vim ~/.bashrc.d/aliases.bashrc"
 alias src="source ~/.bashrc"
 alias vrc="vim ~/.vimrc"
-alias vim="fg || vim"
-alias v="vim"
 alias tn="tmux new -s steph"
 alias passwordgen="date +%s | sha256sum | base64 | head -c 32 ; echo"
 
