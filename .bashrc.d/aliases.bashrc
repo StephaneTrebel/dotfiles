@@ -4,6 +4,7 @@ alias src="source ~/.bashrc"
 alias vrc="vim ~/.vimrc"
 alias tn="tmux new -s steph"
 alias passwordgen="date +%s | sha256sum | base64 | head -c 32 ; echo"
+alias gonotes="cd ~/Notes && vim && git add --all && git commit -m 'Update notes' && cd -"
 
 alias ga="git add --patch"
 alias gc="git commit"
