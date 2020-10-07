@@ -2,8 +2,8 @@
 export HISTCONTROL=ignoredups:erasedups
 
 # big big history
-export HISTSIZE=100000
-export HISTFILESIZE=100000
+export HISTSIZE=10000000
+export HISTFILESIZE=10000000
 
 # Allow use of Ctrl-S in Bash history-search (Ctrl-R) to forward search
 # (only for interactive shell, hence the condition)

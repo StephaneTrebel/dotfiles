@@ -17,7 +17,7 @@
 [status]
 	showUntrackedFiles = all
 [transfer]
-	fsckobjects = true
+	fsckobjects = false
 [fetch]
 	prune = true
 [core]

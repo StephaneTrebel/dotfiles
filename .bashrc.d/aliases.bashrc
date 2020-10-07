@@ -3,6 +3,7 @@ alias valiases="vim ~/.bashrc.d/aliases.bashrc"
 alias src="source ~/.bashrc"
 alias vrc="vim ~/.vimrc"
 alias tn="tmux new -s steph"
+alias ta="tmux attach -t steph"
 alias passwordgen="date +%s | sha256sum | base64 | head -c 32 ; echo"
 alias gonotes="cd ~/Notes && vim && git add --all && git commit -m 'Update notes' && cd -"
 
@@ -25,3 +26,5 @@ alias dp="docker ps -a"
 alias di="docker images"
 alias drm="docker rm"
 alias drmi="docker rmi"
+
+alias k="kubectl"
