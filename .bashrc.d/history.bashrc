@@ -13,4 +13,4 @@ export HISTFILESIZE=10000000
 shopt -s histappend
 
 # After each command, save and reload history
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="setLastCommandState; history -a; history -c; history -r"
