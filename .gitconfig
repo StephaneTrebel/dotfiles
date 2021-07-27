@@ -4,6 +4,9 @@
 [push]
 	default = current
 	followTags = true
+[rebase]
+	autoSquash = true
+	autoStash = true
 [alias]
 	undo = reset --soft HEAD^
 	stash-all = stash save --include-untracked
@@ -14,6 +17,7 @@
 [merge]
 	ff = only
 	conflictstyle = diff3
+	tool = vimdiff
 [status]
 	showUntrackedFiles = all
 [transfer]
@@ -25,4 +29,6 @@
 	editor = vim
 [credential]
 	helper = store
-
+[mergetool]
+	tool = vimdiff
+	keepBack = false

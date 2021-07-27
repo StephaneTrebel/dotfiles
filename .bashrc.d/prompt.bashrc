@@ -1,4 +1,8 @@
 # Git prompt
+
+# Load Git prompt utilities
+source $HOME/bin/git/contrib/completion/git-prompt.sh
+
 # source ~/.git-prompt.sh
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
 	GIT_PROMPT_ONLY_IN_REPO=1
