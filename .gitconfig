@@ -1,4 +1,6 @@
 # Many thanks to https://blog.scottnonnenberg.com/better-git-configuration/
+[init]
+	defaultBranch = trunk
 [pull]
 	rebase = true
 [push]
@@ -11,13 +13,16 @@
 	undo = reset --soft HEAD^
 	stash-all = stash save --include-untracked
 	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	glogone =  log --max-count=1 --pretty=format:'%h'
 	glogtags = log --tags --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	showfiles = diff-tree --no-commit-id --name-only -r
 	find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
+	find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
+	show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
 [merge]
 	ff = only
 	conflictstyle = diff3
-	tool = vimdiff
+	tool = nvimdiff
 [status]
 	showUntrackedFiles = all
 [transfer]
@@ -26,9 +31,12 @@
 	prune = true
 [core]
 	autocrlf = input
-	editor = vim
+	editor = nvim
 [credential]
 	helper = store
 [mergetool]
-	tool = vimdiff
-	keepBack = false
+	keepBackup = false
+[mergetool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
+[rerere]
+	autoUpdate = true
