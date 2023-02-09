@@ -29,8 +29,13 @@ add-bashrc-scripts:
 	for file in .bashrc.d/*.bashrc; do ln -s $$(pwd)/$$file $(TARGET)/$$file; done
 	cat .bashrc >> $(TARGET)/.bashrc
 
+.PHONY: add-bash_profile
+#: Symlink .bash_profile
+add-bash_profile:
+	ln -s $$(pwd)/.bash_profile $(TARGET)
+
 .PHONY: add-inputrc
-#: Symlink inputrc (for history for/backward search with arrows)
+#: Symlink .inputrc
 add-inputrc:
 	ln -s $$(pwd)/.inputrc $(TARGET)
 
@@ -41,5 +46,5 @@ add-prettier-config:
 
 .PHONY: install
 #: Install everything
-install: bash-git-prompt add-bashrc-scripts add-inputrc add-prettier-config
+install: bash-git-prompt add-bashrc-scripts add-inputrc add-bash_profile add-prettier-config
 	@echo Making $@…
