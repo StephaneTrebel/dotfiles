@@ -39,6 +39,11 @@ add-bash_profile:
 add-inputrc:
 	ln -s $$(pwd)/.inputrc $(TARGET)
 
+.PHONY: add-ssh-config
+#: Symlink .bash_profile
+add-ssh-config:
+	ln -s $$(pwd)/ssh_config $(TARGET)/.ssh/config
+
 .PHONY: add-prettier-config
 #: Symlink prettier config
 add-prettier-config:

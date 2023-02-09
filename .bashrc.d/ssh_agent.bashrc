@@ -7,6 +7,7 @@ function start_agent {
      chmod 600 "${SSH_ENV}"
      . "${SSH_ENV}" > /dev/null
      ssh-add;
+     ssh-add ~/.ssh/perso;
 }
 
 if [ -f "${SSH_ENV}" ]; then
