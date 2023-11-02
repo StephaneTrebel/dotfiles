@@ -1,9 +1,9 @@
 # avoid duplicates..
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignorespace:ignoredups:erasedups
 
-# big big history
-export HISTSIZE=10000000
-export HISTFILESIZE=10000000
+# infinite history
+export HISTSIZE=-1
+export HISTFILESIZE=-1
 
 # Allow use of Ctrl-S in Bash history-search (Ctrl-R) to forward search
 # (only for interactive shell, hence the condition)
@@ -13,4 +13,5 @@ export HISTFILESIZE=10000000
 shopt -s histappend
 
 # After each command, save and reload history
-export PROMPT_COMMAND="setLastCommandState; history -a; history -c; history -r"
+# setLastCommandState and setGitPrompt come from bash-git-prompt
+export PROMPT_COMMAND="setLastCommandState; history -a; history -c; history -r; setGitPrompt"
