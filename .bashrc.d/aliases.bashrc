@@ -14,6 +14,8 @@ alias gonotes="cd ~/Notes && vim ~/Notes/current && git add --all && git commit 
 
 alias ga="git add --patch"
 alias gc="git commit"
+alias git-commit-now="git add --all && git commit -m"
+alias gcn="git-commit-now"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gs="git status"
