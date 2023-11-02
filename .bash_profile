@@ -14,3 +14,7 @@ fi
 export GPG_TTY=$(tty)
 export GPG_AGENT_INFO
 . "$HOME/.cargo/env"
+
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
