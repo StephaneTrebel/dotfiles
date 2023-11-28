@@ -11,6 +11,9 @@ alias vpack="vim ./package.json"
 alias tn="tmux new -s steph"
 alias ta="tmux attach -t steph"
 
+# Screenkey bugs on Wayland
+alias screenkey="GDK_BACKEND=x11 screenkey"
+
 alias ga="git add --patch"
 alias gc="git commit"
 alias git-commit-now="git add --all && git commit -m"
