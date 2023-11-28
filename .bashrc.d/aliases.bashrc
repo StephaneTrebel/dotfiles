@@ -10,7 +10,6 @@ alias vrc="vim ~/.vimrc"
 alias vpack="vim ./package.json"
 alias tn="tmux new -s steph"
 alias ta="tmux attach -t steph"
-alias gonotes="cd ~/Notes && vim ~/Notes/current && git add --all && git commit -m 'Update notes' && cd -"
 
 alias ga="git add --patch"
 alias gc="git commit"
